@@ -1,0 +1,16 @@
+#!/bin/bash
+
+# To use:
+#   Receiver <protocol selector> <filename>
+#
+#   Example: $ Receiver 0 ~/Videos/friends_nsfw_vid.avi
+#
+# Arguments:
+#   protocol selector:
+#       * 0 for Go-Back-N
+#       * 1 for Selective Repeat
+#
+#   filename:
+#       path to save the received file
+
+java -cp build t24pham.cs456.a2.receiver.ReceiverMain $1 $2

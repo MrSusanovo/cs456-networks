@@ -1,0 +1,19 @@
+#!/bin/bash
+
+# To use:
+#   Sender <protocol selector> <timeout> <filename>
+#
+#   Example: $ Sender 0 500 ~/Downloads/nsfw_vid.avi
+#
+# Arguments:
+#   protocol selector:
+#       * 0 for Go-Back-N
+#       * 1 for Selective Repeat
+#
+#   timeout:
+#       positive integer representing timeout in milliseconds
+#
+#   filename:
+#       path to file to be sent
+
+java -cp build t24pham.cs456.a2.sender.SenderMain $1 $2 $3
